@@ -34,7 +34,7 @@ const router = createRouter({
     { path: "/profilo:userId", component: Profilo, name: "profilo" },
     { path: "/profilo:userId/modifica", component: modificaProfilo, name: "modificaProfilo" },
     { path: "/artista:arId", component: Artista, name: "artista" },
-    { path: "/canzone:caId", component: Opera, name: "canzone" }
+    { path: "/canzone:caId", component: Canzone, name: "canzone" }
   ],
 });
 
