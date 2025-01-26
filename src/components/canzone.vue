@@ -65,7 +65,7 @@ export default {
   methods: {
     async musicData() {
         try {
-          const response = await DataService.getGene(this.$route.params.opId.substring(1));
+          const response = await DataService.getGene(this.$route.params.caId.substring(1));
           this.MusicObj = response.data._embedded.results[0]
           this.imgSet = response.data._embedded.results[0]._links.thumbnail.href
           
@@ -103,7 +103,7 @@ export default {
         likeImage: async function () {
             const docRef = await setDoc(doc(DataService.dbEx(), 'likes', this.user + "_oppla_" + this.$route.params.caId.substring(1)), {
                 userId: this.user,
-                postId: this.$route.params.opId.substring(1)
+                postId: this.$route.params.caId.substring(1)
             })
             this.checkIfLiked()
         } 
