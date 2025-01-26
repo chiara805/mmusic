@@ -10,7 +10,7 @@
                     Compila il form con i tuoi dati per aprire un universo di canzoni.
                 </h2>
             </div>
-            <a>Hai un account artella? <a style="color: #FF5400; cursor: pointer;"
+            <a>Hai un account mmusic? <a style="color: #FF5400; cursor: pointer;"
                     @click="this.sezione__accesso = 1">Accedi</a></a>
         </div>
         <div class="template__inside">
